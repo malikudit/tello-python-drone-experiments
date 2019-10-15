@@ -1,5 +1,5 @@
 # TelloPy DJI Drone
-![A simple visual of a Tello DJI drone](tello-img.jpg)
+![A simple visual of a Tello DJI drone](tellosnip1.PNG)
 
 ## Installation Instructions
 ### Downloading Anaconda
