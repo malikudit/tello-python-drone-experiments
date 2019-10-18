@@ -40,56 +40,41 @@ def test():
 	sleep(3)
 	drone.up(0)
 
-	go_one_unit_forward(drone)
-	turn_clockwise(drone)
+	# draws the top square base of the cube
+	for i in range(4):
+		go_one_unit_forward(drone)
+		turn_clockwise(drone)
   
-	go_one_unit_forward(drone)
-	turn_clockwise(drone)
+	# goes down to draw the bottom face of the cube
+	go_one_unit_down(drone)
   
+	# draws the bottom square base of the cube
+	for i in range(4):
+		go_one_unit_forward(drone)
+		turn_clockwise(drone)
+  
+	# the following code draws the vertical sides of the cube 
 	go_one_unit_forward(drone)
+	go_one_unit_up(drone)
 	turn_clockwise(drone)
   
 	go_one_unit_forward(drone)
 	turn_clockwise(drone)
   
 	go_one_unit_down(drone)
-  
 	go_one_unit_forward(drone)
-	turn_clockwise(drone)
-  
-	go_one_unit_forward(drone)
-	turn_clockwise(drone)
-  
-	go_one_unit_forward(drone)
-	turn_clockwise(drone)
-  
-	go_one_unit_forward(drone)
-	turn_clockwise(drone)
-  
-	go_one_unit_forward(drone)
-  
-	go_one_unit_up(drone)
-  
-	turn_clockwise(drone)
-  
-	go_one_unit_forward(drone)
-	turn_clockwise(drone)
-  
-	go_one_unit_down(drone)
-  
-	go_one_unit_forward(drone)
-  
 	go_one_unit_up(drone)
 
-  drone.down(10)
-  sleep(3)
+	drone.down(10)
+  	sleep(3)
 
-  drone.land()
-  sleep(3)
-  except Exception as ex:
-    print(ex)
-  finally:
-    drone.quit()
+	drone.land()
+	sleep(3)
+	except Exception as ex:
+		print(ex)
+	
+	finally:
+		drone.quit()
 
 if __name__ == '__main__':
     test()
