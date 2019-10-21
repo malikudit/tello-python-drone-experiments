@@ -1,6 +1,8 @@
+# team epsilon
+# udit malik and max kirimi
+
 from time import sleep
 import tellopy
-
 
 def handler(event, sender, data, **args):
     drone = sender
