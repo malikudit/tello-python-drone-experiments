@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 # team epsilon
 # udit malik and max kirimi
 
@@ -42,17 +44,18 @@ def test():
         drone.wait_for_connection(60.0)
         drone.takeoff()
         sleep(3)
-
+	
+	# takes the drone up to a comfortable height to perform operations
 	drone.up(20)
 	sleep(3)
 	drone.up(0)
 
-    # drawing the square in the sequence
+    	# drawing the square in the sequence
 	for i in range(4):
 		go_one_unit_forward(drone)
 		turn_clockwise(drone)
 
-    # drawing the circle in the sequence
+    	# drawing the circle in the sequence
 	drone.clockwise(60)
 	drone.forward(30)
 	sleep(7)
@@ -60,7 +63,7 @@ def test():
 	drone.forward(0)
 	sleep(2)
 	
-    # drawing the triangle in the sequence
+    	# drawing the triangle in the sequence
 	for i in range(3):
 		go_one_unit_forward(drone)
 		drone.clockwise(88)
@@ -70,8 +73,10 @@ def test():
         drone.down(10)
         sleep(3)
 
+	# shuts the drone off
         drone.land()
         sleep(3)
+	
     except Exception as ex:
         print(ex)
     finally:
