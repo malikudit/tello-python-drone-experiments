@@ -1,6 +1,4 @@
 # TelloPy DJI Drone
-![A simple visual of a Tello DJI drone](tellosnip1.PNG)
-
 ## Installation Instructions
 ### Downloading Anaconda
 #### Windows and Mac
@@ -50,3 +48,6 @@ Navigate to the folder where the Python file exists on your computer, and simply
 python2 filename.py
 ```
 where filename is the name of your file.
+
+
+![A simple visual of a Tello DJI drone](tellosnip1.PNG)
