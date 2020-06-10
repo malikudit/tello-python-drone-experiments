@@ -19,33 +19,33 @@ $ pip install dist/tellopy-*.dev*.whl --upgrade
 
 #### From the Anaconda prompt in Windows/regular terminal in Mac and Linux
 ```
-pip install tellopy
+$ pip install tellopy
 ```
 
 ### Testing
 Type the following in the terminal or Anaconda prompt to perform a simple takeoff procedure with the drone:
 ```
-python -m tellopy.examples.simple_takeoff
+$ python -m tellopy.examples.simple_takeoff
 ```
 
 ### Setting up the Tello drone video capture function
 Type the following sequentially into the terminal or Anaconda prompt:
 ```
-conda install -c conda-forge av
-pip install open-cv python
-pip install image
-pip install msgpack
+$ conda install -c conda-forge av
+$ pip install open-cv python
+$ pip install image
+$ pip install msgpack
 ```
 
 To test the video capture function, type:
 ```
-python -m tellopy.examples.video_effect
+$ python -m tellopy.examples.video_effect
 ```
 
 ## Running Python scripts for the drone
 Navigate to the folder where the Python file exists on your computer, and simply type:
 ```
-python2 filename.py
+$ python2 filename.py
 ```
 where filename is the name of your file.
 
